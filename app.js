@@ -1,6 +1,7 @@
 var express = require('express');
 
 var app = express();
+var port = process.env.PORT || 8080;
 
 app.set('view engine','ejs');
 
@@ -38,7 +39,6 @@ app.get('/',function(req,res){
 
 });
 
-app.listen(8080, function(){
-	console.log('Server is up and running on port 3000');
-
+app.listen(port, function(){
+  console.log('server is up and running on port %s',port);
 });
