@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>
+			<%= title %>
+		</title>
+		<head>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		</head>
+		<script src="//use.edgefonts.net/lobster-two.js"></script>
+		<style>
+			.title-font{
+				font-family: lobster-two, cursive;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand" href="#">iLoveMyCity</a>
+			    </div>
+			    <ul class="nav navbar-nav">
+			      <li class="active"><a href="/bangaluru">Bangaluru</a></li>
+			      <li><a href="/singapore">Singapore</a></li>
+			      <li><a href="/newyork">New York</a></li>
+			    </ul>
+			  </div>
+			</nav>
+			<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="title-font"> <%=cityLabel%> has something to say !</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="container">
+					<% for(i=1;i<=imageCount;i++) {%>
+						<img class="img-thumbnail"
+						src="/images/<%=city%>/<%=i%>.jpg">
+					<%}%>
+				</div>
+			</div>
+        </div>
+
+	</body>
+</html>

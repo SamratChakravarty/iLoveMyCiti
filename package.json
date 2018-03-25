@@ -1,0 +1,15 @@
+{
+  "name": "boorstrap",
+  "version": "1.0.0",
+  "description": "This is my first bootstrap project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samrat chakravarty",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.3"
+  }
+}
