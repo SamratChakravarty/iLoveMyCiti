@@ -38,7 +38,7 @@ app.get('/',function(req,res){
 
 });
 
-app.listen(3000, function(){
+app.listen(8080, function(){
 	console.log('Server is up and running on port 3000');
 
 });
